@@ -1,9 +1,22 @@
 import react from "react";
 import "./index.css";
+import AppBar from "./Components/AppBar";
+import TableList from "./Components/TableList";
+import Categories from "./Components/Categories";
+import CartLayout from "./Components/CartLayout";
+
 function App() {
   return (
     <>
-      <h3 className="text-red-800">Hello World</h3>
+      <div>
+        <AppBar />
+      </div>
+
+      <div>
+        <CartLayout />
+        {/* <Categories />
+        <TableList /> */}
+      </div>
     </>
   );
 }

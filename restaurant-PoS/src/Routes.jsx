@@ -1,17 +1,17 @@
 // src/Routes.jsx
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "./App";
 
-const Routes = () => {
+const RoutesComponent = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" component={App} />
+      <Routes>
+        <Route path="/" element={<App />} />
         {/* Add more routes as needed */}
-      </Switch>
+      </Routes>
     </Router>
   );
 };
 
-export default Routes;
+export default RoutesComponent;
